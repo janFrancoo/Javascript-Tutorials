@@ -1,0 +1,17 @@
+[
+    {
+        "name": "JanFranco",
+        "dep": "Soft",
+        "salary": 5000
+    },
+    {
+        "name": "JaneFranco",
+        "dep": "HR",
+        "salary": 5000
+    }, 
+    {
+        "name": "Killa Hakan",
+        "dep": "Entertainment",
+        "salary": "Sen anan yani"
+    }
+]

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Hello, world!</title>
+    </head>
+    <body class="bg-light">
+        <div class="container">
+            <div class="row mt-5 mx-auto" style="max-width: 700px;">
+                <div class="col-7">
+                    <div class="card mx-auto shadow-sm" style="max-width: 400px;">
+                        <h5 class="card-header">Github API</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Get github users rapidly!</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut velit cupiditate, alias ex quod.</p>
+                            <input type="text" class="form-control form-control-sm mb-3" id="input-username">
+                            <a href="#" class="btn btn-dark btn-sm float-right" id="get-user">Get User</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card shadow-sm" style="width: 18rem; max-height: 241px;">
+                        <div class="card-header">
+                          Search History
+                        </div>
+                        <ul class="list-group list-group-flush" id="search-history" style="overflow-y:scroll;">
+                            <li class="list-group-item bg-light py-2"><button class="btn btn-dark btn-sm float-right" id="clear-all">Clear All</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-3">
+                <div class="col-4 mr-3" id="placeholder">
+                    <svg width="380" height="380">
+                        <rect x="20" y="20" width="300" height="300" 
+                        style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+                    </svg>
+                </div>
+                <div class="col pt-3">
+                    <h5 id="name">Name Surname</h5>
+                    <hr>
+                    <button type="button" class="btn btn-dark btn-sm">
+                        Following <span class="badge badge-light" id="following">9</span>
+                    </button>
+                    <button type="button" class="btn btn-info btn-sm">
+                        Followers <span class="badge badge-light" id="follower">9</span>
+                    </button>
+                    <button type="button" class="btn btn-warning btn-sm">
+                        Repos <span class="badge badge-light" id="repos">9</span>
+                    </button>
+                    <ul class="list-group list-group-flush col-4 mt-3" id="github-info">
+                        <li class="list-group-item bg-light"><i class="fas fa-user-alt mr-2"></i></li>
+                        <li class="list-group-item bg-light"><i class="fas fa-envelope mr-2"></i></li>
+                        <li class="list-group-item bg-light"><i class="fas fa-map-marker-alt mr-2"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5bbccb4e82.js" crossorigin="anonymous"></script>
+        <script src="request.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

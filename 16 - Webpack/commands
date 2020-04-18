@@ -1,0 +1,3 @@
+npm i @babel/core @babel/polyfill @babel/preset-env babel-loader --save-dev
+npm i webpack-cli webpack --save-dev
+npm run build (build -> webpack --watch)

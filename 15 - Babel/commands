@@ -1,0 +1,5 @@
+npm init
+npm install @babel/cli @babel/core @babel/polyfill @babel/preset-env --save-dev
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted (this is for executing the line above)
+./node_modules/.bin/babel src -d lib
+npm run build (after updating package.json)

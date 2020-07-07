@@ -3,11 +3,20 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 
 export default class CatList extends Component {
     state = {
-        categories: [
-            {categoryID: 1, categoryName: "Beverages"},
-            {categoryID: 2, categoryName: "Condiments"}
-        ],
+        categories: []
     };
+
+    getCats = () => {
+        fetch("http://localhost:3000/categories")
+        .then(res => res.json())
+        .then(data => this.setState({
+            categories: data
+        }));
+    }
+
+    componentDidMount() {
+        this.getCats();
+    }
 
     render() {
         return (
@@ -16,7 +25,9 @@ export default class CatList extends Component {
                 <ListGroup>
                     {
                         this.state.categories.map(category => (
-                            <ListGroupItem key={ category.categoryID } onClick={ () => this.props.changeCat(category) }> 
+                            <ListGroupItem  active={category.categoryName===this.props.currentCat ? true : false}
+                                            key={ category.id } 
+                                            onClick={ () => this.props.changeCat(category) }> 
                                 { category.categoryName }
                             </ListGroupItem>
                         ))

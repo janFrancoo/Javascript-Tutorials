@@ -5,5 +5,6 @@ export default {
     },
     categories: [],
     products: [],
-    cart: []
+    cart: [],
+    savedProduct: []
 }  

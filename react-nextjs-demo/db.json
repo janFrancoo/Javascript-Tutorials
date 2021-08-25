@@ -1,0 +1,51 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "title": "News - 1",
+            "description": "Desc 1",
+            "category": "sports"
+        },
+        {
+            "id": 2,
+            "title": "News - 2",
+            "description": "Desc 2",
+            "category": "politics"
+        },
+        {
+            "id": 3,
+            "title": "News - 3",
+            "description": "Desc - 3",
+            "category": "sports"
+        }
+    ],
+    "dashboard": {
+        "posts": 5,
+        "likes": 100,
+        "followers": 20,
+        "following": 50
+    },
+    "events": [
+        {
+            "id": 1,
+            "title": "Event - 1",
+            "description": "Desc - 1",
+            "category": "sports",
+            "date": "April 25"
+        }, 
+        {
+            "id": 2,
+            "title": "Event - 2",
+            "description": "Desc - 2",
+            "category": "technology",
+            "date": "May 25"
+        },
+        {
+            "id": 3,
+            "title": "Event - 3",
+            "description": "Desc - 3",
+            "category": "food",
+            "date": "October 25"
+        }
+    ]
+}
